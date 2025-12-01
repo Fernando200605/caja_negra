@@ -13,5 +13,8 @@ urlpatterns = [
     path("usuario/<str:user>/", saludar_usuario),
     #Ruta Actividad 2
     path('calculadora/<str:operacion>/<int:a>/<int:b>/', calculadora),
+    #Ruta Actividad 3
+    path('habitacion/1/', habitacion_inicial, name='habitacion'),
+    path('mover/<str:direccion>/', mover, name='mover'),
 ]
 
