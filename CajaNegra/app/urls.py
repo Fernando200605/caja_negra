@@ -3,5 +3,13 @@ from django.urls import path
 from app.views import * 
 
 urlpatterns = [
-    
+    # Rutas de productos
+    path("producto/<int:id>/", detalle_producto),            
+    path("producto/categoria/<str:categoria>/", productos_por_categoria),
+    path("producto/listar/", listar_productos),
+    #rutas de pedidos
+    path("pedidos/<int:anio>/<str:nivel>/",pedidos_por_urgencia),
+    #ruta de saludo
+    path("usuario/<str:user>/", saludar_usuario),
 ]
+
