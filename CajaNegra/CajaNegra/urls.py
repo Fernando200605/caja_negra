@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('habitacion/1/', views.habitacion_inicial, name='habitacion'),
-    path('mover/<str:direccion>/', views.mover, name='mover'),
+    path('admin/', admin.site.urls),
+    path('juego/', include('app.urls')), 
 ]
