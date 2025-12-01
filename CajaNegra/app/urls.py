@@ -11,5 +11,7 @@ urlpatterns = [
     path("pedidos/<int:anio>/<str:nivel>/",pedidos_por_urgencia),
     #ruta de saludo
     path("usuario/<str:user>/", saludar_usuario),
+    #Ruta Actividad 2
+    path('calculadora/<str:operacion>/<int:a>/<int:b>/', calculadora),
 ]
 
